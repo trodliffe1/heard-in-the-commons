@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    /* Top Banner */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    /* Navigation Bar with Drop-down Menus */
+    nav {
+      background-color: #444;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      position: relative;
+    }
+    nav a {
+      display: block;
+      padding: 14px 20px;
+      text-decoration: none;
+      color: #fff;
+    }
+    nav li:hover {
+      background-color: #555;
+    }
+    /* Drop-down menu */
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #444;
+      padding: 0;
+      margin: 0;
+      min-width: 150px;
+      z-index: 1000;
+    }
+    nav li:hover ul {
+      display: block;
+    }
+    nav li ul li {
+      width: 100%;
+    }
+    /* Layout: Sidebar and Main Content */
+    #container {
+      display: flex;
+    }
+    /* Left Sidebar with Dates */
+    #sidebar {
+      width: 220px;
+      background-color: #f4f4f4;
+      padding: 20px;
+      box-sizing: border-box;
+      height: calc(100vh - 100px); /* Adjust height based on header/nav */
+      overflow-y: auto;
+    }
+    /* Main Content Area */
+    #main-content {
+      flex: 1;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Heard In The Commons</h1>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="#">Menu 1</a>
+        <ul>
+          <li><a href="#">Submenu 1-1</a></li>
+          <li><a href="#">Submenu 1-2</a></li>
+          <li><a href="#">Submenu 1-3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Menu 2</a>
+        <ul>
+          <li><a href="#">Submenu 2-1</a></li>
+          <li><a href="#">Submenu 2-2</a></li>
+          <li><a href="#">Submenu 2-3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Menu 3</a>
+        <ul>
+          <li><a href="#">Submenu 3-1</a></li>
+          <li><a href="#">Submenu 3-2</a></li>
+          <li><a href="#">Submenu 3-3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div id="container">
+    <div id="sidebar">
+      <h2>Dates</h2>
+      <ul>
+        <li>Feb 13, 2025</li>
+        <li>Feb 14, 2025</li>
+        <li>Feb 17, 2025</li>
+        <li>Feb 18, 2025</li>
+        <li>Feb 19, 2025</li>
+        <li>Feb 20, 2025</li>
+        <li>Feb 21, 2025</li>
+        <li>Feb 24, 2025</li>
+        <li>Feb 25, 2025</li>
+        <li>Feb 26, 2025</li>
+        <li>Feb 27, 2025</li>
+        <li>Feb 28, 2025</li>
+      </ul>
+    </div>
+    <div id="main-content">
+        <h2>Business Of The House</h2>
+        <p>
+            In a recent parliamentary session, the Leader of the House outlined the business schedule for the week of February 24, which includes discussions on the Crown Estate Bill and the ongoing war in Ukraine. Economic forecasts have taken a downturn, with the Bank of England projecting a mere 0.75% growth. Criticism has been directed at the Attorney General for inconsistencies in government policy, particularly regarding the UK's commitment to international law and modern slavery protections, which clash with new legislation on small boats. Lucy Powell has called for parliamentary reforms to restore trust and enhance effectiveness.
+        </p>
+        <p>
+            The session also highlighted the importance of funding for women's centres to combat violence against women and girls, with Powell advocating for a goal to halve such violence in the next decade. Concerns were raised about local government financial burdens, particularly in councils like Woking and Thurrock, and the urgent need for affordable housing was underscored by a controversial decision in Northumberland to remove 9,000 people from the housing waiting list.
+        </p>
+        <p>
+            Additionally, discussions included the need for stronger sentencing laws to deter drink-driving, support for grassroots sports, and the importance of apprenticeships in local economies. The government is also addressing issues related to roadworks and public transport accountability. Amid these discussions, the case of Yahaya Sharif-Aminu, a musician sentenced to death for blasphemy in Nigeria, was highlighted, calling for international attention to human rights violations.
+        </p>
+    </div>
+  </div>
+</body>
+</html>
